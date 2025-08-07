@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #000000ee;
+}
+
+.team-section-custom {
+    background-color: #000;
+    color: #fff;
+  }
+
+
+.team-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  
+}
+
+.team-heading .sub {
+  color: #888;
+  font-weight: 500;
+}
+
+.team-heading h2 {
+  font-size: 2.8rem;
+  margin: 10px 0;
+}
+
+.team-heading p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.team-card-custom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    color: #fff;
+    z-index: 2;
+  }
+
+  .team-card-custom:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+  }
+
+  .object-fit-cover {
+    object-fit: cover;
+  }
+  
+
+  .col-md-6 {
+  margin-bottom: 30px;
+}
+
+.team-section-custom h2 {
+  margin-top: 90px;
+}
+
+
+
+  .star-field {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+  }
+
+  .star {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+
+  .star-fast {
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    animation: fall-fast 10s linear infinite;
+  }
+
+  .star-slow {
+    width: 5px;
+    height: 5px;
+    background: #ccddee;
+    animation: fall-slow 20s linear infinite;
+  }
+
+  @keyframes fall-fast {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(300vh); opacity: 0; }
+  }
+
+  @keyframes fall-slow {
+    0% { transform: translateY(0); opacity: 0.5; }
+    100% { transform: translateY(300vh); opacity: 0; }
+  }
+
